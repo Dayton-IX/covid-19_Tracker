@@ -114,55 +114,71 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 function CountrySelector() {
-  const countries = Object(_utils_useStats__WEBPACK_IMPORTED_MODULE_1__["default"])('https://covid19.mathdro.id/api/countries');
+  const {
+    stats: countries,
+    loading,
+    error
+  } = Object(_utils_useStats__WEBPACK_IMPORTED_MODULE_1__["default"])('https://covid19.mathdro.id/api/countries');
   const {
     0: selectedCountry,
-    1: setSelectedCounty
+    1: setSelectedCountry
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('USA');
-  if (!countries) return __jsx("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, "Loading...");
-  return __jsx("div", {
+  if (loading) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }, __jsx("h2", {
+  }, "Loading...");
+  if (loading) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 11
     },
     __self: this
-  }, "Currently Showing ", selectedCountry), __jsx("select", {
-    onChange: e => {
-      setSelectedCounty(e.target.value);
-    },
+  }, "Loading...");
+  if (error) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 12
     },
     __self: this
-  }, Object.entries(countries.countries).map(([country, code]) => {
-    return __jsx("option", {
-      selected: selectedCountry === countries.iso3[code],
-      key: country,
-      value: countries.iso3[code],
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 16
-      },
-      __self: this
-    }, country);
-  })), __jsx(_Stats__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, "Error...");
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
+  }, "Currently Showing ", selectedCountry), __jsx("select", {
+    onChange: e => {
+      setSelectedCountry(e.target.value);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }, Object.entries(countries.countries).map(([country, code]) => __jsx("option", {
+    selected: selectedCountry === countries.iso3[code],
+    key: code,
+    value: countries.iso3[code],
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, country))), __jsx(_Stats__WEBPACK_IMPORTED_MODULE_2__["default"], {
     url: `https://covid19.mathdro.id/api/countries/${selectedCountry}`,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 32
     },
     __self: this
   }));
@@ -182,85 +198,110 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Stats; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _utils_useStats__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/useStats */ "./utils/useStats.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _utils_useStats__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/useStats */ "./utils/useStats.js");
 var _jsxFileName = "C:\\Users\\dayto\\Documents\\Code\\covid-19_Tracker\\components\\Stats.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function Stats(props) {
+
+const StatGrid = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+`;
+const StatBlock = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
+  background: #f2f2f2;
+  font-size: 2rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+`;
+function Stats({
+  url
+}) {
   const {
     stats,
     loading,
     error
-  } = Object(_utils_useStats__WEBPACK_IMPORTED_MODULE_1__["default"])(props.url);
-  if (!stats) return __jsx("p", {
+  } = Object(_utils_useStats__WEBPACK_IMPORTED_MODULE_2__["default"])(url);
+  console.log(stats, loading, error);
+  if (loading) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 23
     },
     __self: this
   }, "Loading...");
-  return __jsx("div", {
+  if (error) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 24
     },
     __self: this
-  }, __jsx("div", {
-    className: "statBlock",
+  }, "Error...");
+  return __jsx(StatGrid, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 26
+    },
+    __self: this
+  }, __jsx(StatBlock, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
     },
     __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 28
     },
     __self: this
   }, "Confirmed:"), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 29
     },
     __self: this
-  }, stats.confirmed.value)), __jsx("div", {
-    className: "statBlock",
+  }, stats.confirmed.value)), __jsx(StatBlock, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 31
     },
     __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 32
     },
     __self: this
   }, "Deaths:"), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 33
     },
     __self: this
-  }, stats.deaths.value)), __jsx("div", {
-    className: "statBlock",
+  }, stats.deaths.value)), __jsx(StatBlock, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 35
     },
     __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 36
     },
     __self: this
   }, "Recovered:"), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 37
     },
     __self: this
   }, stats.recovered.value)));
@@ -280,31 +321,47 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return IndexPage; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_Stats__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Stats */ "./components/Stats.js");
-/* harmony import */ var _components_CountrySelector__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/CountrySelector */ "./components/CountrySelector.js");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _utils_useStats__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/useStats */ "./utils/useStats.js");
+/* harmony import */ var _components_Stats__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Stats */ "./components/Stats.js");
+/* harmony import */ var _components_CountrySelector__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/CountrySelector */ "./components/CountrySelector.js");
 var _jsxFileName = "C:\\Users\\dayto\\Documents\\Code\\covid-19_Tracker\\pages\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
+
+
+const GlobalStyle = styled_components__WEBPACK_IMPORTED_MODULE_1__["createGlobalStyle"]`
+  html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+`;
 function IndexPage() {
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 14
     },
     __self: this
-  }, __jsx(_components_Stats__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, __jsx(GlobalStyle, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }), __jsx(_components_Stats__WEBPACK_IMPORTED_MODULE_3__["default"], {
     url: "https://covid19.mathdro.id/api",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 16
     },
     __self: this
-  }), __jsx(_components_CountrySelector__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), __jsx(_components_CountrySelector__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 17
     },
     __self: this
   }));
@@ -333,16 +390,17 @@ function useStats(url) {
   const {
     0: loading,
     1: setLoading
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const {
     0: error,
     1: setError
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])();
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    console.log('Mounting or Updating');
+    console.log('Mounting or updating');
 
     async function fetchData() {
       setLoading(true);
+      setError();
       console.log('Fetching Data');
       const data = await fetch(url).then(res => res.json()).catch(err => {
         setError(err);
@@ -382,6 +440,17 @@ module.exports = __webpack_require__(/*! C:\Users\dayto\Documents\Code\covid-19_
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "styled-components":
+/*!************************************!*\
+  !*** external "styled-components" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-components");
 
 /***/ })
 
