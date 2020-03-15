@@ -116,19 +116,49 @@ function useStats() {
     1: setStats
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])();
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    console.log('Fetching Data');
-    fetch('https://covid19.mathdro.id/api');
+    async function fetchData() {
+      console.log('Fetching Data');
+      const data = await fetch('https://covid19.mathdro.id/api').then(res => res.json());
+      setStats(data);
+    }
+
+    fetchData();
   }, []);
+  return stats;
+}
+
+function Stats() {
+  const stats = useStats();
+  console.log(stats);
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, "Stats:"));
 }
 
 function IndexPage() {
-  return __jsx("p", {
+  return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 28
     },
     __self: this
-  }, "Hey");
+  }, __jsx(Stats, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: this
+  }));
 }
 
 /***/ }),
