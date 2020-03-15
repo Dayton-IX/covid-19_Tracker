@@ -1,30 +1,11 @@
-import useStats from '../utils/useStats';
-
-function Stats() {
-    const stats = useStats();
-    if (!stats) return <p>Loading...</p> 
-    return (
-        <div>
-            <div className="statBlock">
-                <h3>Confirmed:</h3>
-                <span>{stats.confirmed.value}</span>
-            </div>
-            <div className="statBlock">
-                <h3>Deaths:</h3>
-                <span>{stats.deaths.value}</span>
-            </div>
-            <div className="statBlock">
-                <h3>Recovered:</h3>
-                <span>{stats.recovered.value}</span>
-            </div>
-        </div>
-    )
-}
+import Stats from '../components/Stats';
+import CountrySelector from '../components/CountrySelector';
 
 export default function IndexPage() {
     return(
         <div>
             <Stats></Stats>
+            <CountrySelector></CountrySelector>
         </div>
     )
 }
