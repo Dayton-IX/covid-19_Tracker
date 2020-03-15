@@ -106,43 +106,66 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _utils_useStats__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/useStats */ "./utils/useStats.js");
+/* harmony import */ var _Stats__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Stats */ "./components/Stats.js");
 var _jsxFileName = "C:\\Users\\dayto\\Documents\\Code\\covid-19_Tracker\\components\\CountrySelector.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
+
+
 function CountrySelector() {
   const countries = Object(_utils_useStats__WEBPACK_IMPORTED_MODULE_1__["default"])('https://covid19.mathdro.id/api/countries');
-  console.log(countries);
+  const {
+    0: selectedCountry,
+    1: setSelectedCounty
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])('USA');
   if (!countries) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 8
     },
     __self: this
   }, "Loading...");
   return __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 10
     },
     __self: this
-  }, __jsx("select", {
+  }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 11
+    },
+    __self: this
+  }, "Currently Showing ", selectedCountry), __jsx("select", {
+    onChange: e => {
+      setSelectedCounty(e.target.value);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
     },
     __self: this
   }, Object.entries(countries.countries).map(([country, code]) => {
     return __jsx("option", {
-      key: code,
-      value: code,
+      selected: selectedCountry === countries.iso3[code],
+      key: country,
+      value: countries.iso3[code],
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
+        lineNumber: 16
       },
       __self: this
     }, country);
-  })));
+  })), __jsx(_Stats__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    url: `https://covid19.mathdro.id/api/countries/${selectedCountry}`,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }));
 }
 
 /***/ }),
@@ -164,8 +187,12 @@ var _jsxFileName = "C:\\Users\\dayto\\Documents\\Code\\covid-19_Tracker\\compone
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function Stats() {
-  const stats = Object(_utils_useStats__WEBPACK_IMPORTED_MODULE_1__["default"])('https://covid19.mathdro.id/api');
+function Stats(props) {
+  const {
+    stats,
+    loading,
+    error
+  } = Object(_utils_useStats__WEBPACK_IMPORTED_MODULE_1__["default"])(props.url);
   if (!stats) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
@@ -268,6 +295,7 @@ function IndexPage() {
     },
     __self: this
   }, __jsx(_components_Stats__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    url: "https://covid19.mathdro.id/api",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 7
@@ -302,16 +330,34 @@ function useStats(url) {
     0: stats,
     1: setStats
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])();
+  const {
+    0: loading,
+    1: setLoading
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    0: error,
+    1: setError
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])();
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    console.log('Mounting or Updating');
+
     async function fetchData() {
+      setLoading(true);
       console.log('Fetching Data');
-      const data = await fetch(url).then(res => res.json());
+      const data = await fetch(url).then(res => res.json()).catch(err => {
+        setError(err);
+      });
       setStats(data);
+      setLoading(false);
     }
 
     fetchData();
-  }, []);
-  return stats;
+  }, [url]);
+  return {
+    stats,
+    loading,
+    error
+  };
 }
 
 /***/ }),

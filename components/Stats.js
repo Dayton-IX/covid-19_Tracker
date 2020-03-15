@@ -1,7 +1,7 @@
 import useStats from '../utils/useStats';
 
-export default function Stats() {
-    const stats = useStats('https://covid19.mathdro.id/api');
+export default function Stats(props) {
+    const {stats, loading, error} = useStats(props.url);
     if (!stats) return <p>Loading...</p> 
     return (
         <div>
