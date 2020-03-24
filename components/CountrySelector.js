@@ -13,8 +13,8 @@ export default function CountrySelector() {
 
   return (
     <div>
-      <h2>Currently Showing {selectedCountry}</h2>
-      <select
+      <h2>United States Statistics:</h2>
+      {/* <select
         onChange={e => {
           setSelectedCountry(e.target.value);
         }}
@@ -28,9 +28,10 @@ export default function CountrySelector() {
             {country}
           </option>
         ))}
-      </select>
+      </select> */}
       <Stats
-        url={`https://covid19.mathdro.id/api/countries/${selectedCountry}`}
+        // url={`https://covid19.mathdro.id/api/countries/${selectedCountry}`}
+        url={`https://covid19.mathdro.id/api/countries/USA`}
       ></Stats>
     </div>
   );
