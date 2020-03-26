@@ -362,7 +362,7 @@ function IndexPage() {
     },
     __self: this
   }, "United States Statistics:"), __jsx(_components_Stats__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    url: "https://covid19.mathdro.id/api/USA",
+    url: "https://covid19.mathdro.id/api/countries/usa",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 24

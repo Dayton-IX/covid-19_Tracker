@@ -21,7 +21,7 @@ export default function IndexPage() {
         <h2>Global Statistics:</h2>
         <Stats url="https://covid19.mathdro.id/api"></Stats>
         <h2>United States Statistics:</h2>
-        <Stats url="https://covid19.mathdro.id/api/USA"></Stats>
+        <Stats url="https://covid19.mathdro.id/api/countries/usa"></Stats>
       </Layout>
     </div>
   );
