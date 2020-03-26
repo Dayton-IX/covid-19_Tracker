@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import Stats from '../components/Stats';
 // import CountrySelector from '../components/CountrySelector';
 import Layout from '../components/Layout/Layout';
+import Instructions from '../components/Instructions/Instructions';
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -22,6 +23,7 @@ export default function IndexPage() {
         <Stats url="https://covid19.mathdro.id/api"></Stats>
         <h2>United States Statistics:</h2>
         <Stats url="https://covid19.mathdro.id/api/countries/usa"></Stats>
+        <Instructions />
       </Layout>
     </div>
   );
