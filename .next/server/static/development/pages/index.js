@@ -126,21 +126,253 @@ const Instructions = props => __jsx("div", {
     lineNumber: 6
   },
   __self: undefined
-}, "What you can do"), __jsx("p", {
+}, "What you should do"), __jsx("ul", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 7
   },
   __self: undefined
-}, "Visit the ", __jsx("a", {
+}, __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: undefined
+}, "Listen and follow the directions of your ", __jsx("strong", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: undefined
+}, "STATE AND LOCAL AUTHORITIES")), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}, __jsx("strong", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 9
+  },
+  __self: undefined
+}, "IF YOU ARE AN OLDER PERSON,"), " or have a serious underlying health condition, stay home and away from other people."), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+}, "Work or study ", __jsx("strong", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
+  },
+  __self: undefined
+}, "FROM HOME"), " whenever possible."), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}, __jsx("strong", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 11
+  },
+  __self: undefined
+}, "AVOID SOCIAL GATHERINGS"), " in groups of more than 10 people."), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
+  },
+  __self: undefined
+}, "Avoid eating or drinking at bars and restaurants -- ", __jsx("strong", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 12
+  },
+  __self: undefined
+}, "USE PICKUP OR DELIVERY OPTIONS.")), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 13
+  },
+  __self: undefined
+}, __jsx("strong", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 13
+  },
+  __self: undefined
+}, "AVOID DISCRETIONARY TRAVEL,"), " shopping trips, and social visits."), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14
+  },
+  __self: undefined
+}, __jsx("strong", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 14
+  },
+  __self: undefined
+}, "DO NOT VISIT "), " nursing homes or retirement or long-term care facilties unless to provide critical assistance"), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15
+  },
+  __self: undefined
+}, __jsx("strong", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 15
+  },
+  __self: undefined
+}, "IF YOU FEEL SICK,"), " stay home. Do not go to work."), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 16
+  },
+  __self: undefined
+}, __jsx("strong", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 16
+  },
+  __self: undefined
+}, "IF YOUR CHILDREN ARE SICK,"), " help them at home. Contact your medical provider."), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 17
+  },
+  __self: undefined
+}, "If someone in your household has ", __jsx("strong", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 17
+  },
+  __self: undefined
+}, "TESTED POSITIVE,"), " keep the entire household at home."), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 18
+  },
+  __self: undefined
+}, __jsx("strong", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 18
+  },
+  __self: undefined
+}, "ALWAYS PRACTICE GOOD HYGIENE:")), __jsx("ul", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 19
+  },
+  __self: undefined
+}, __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 20
+  },
+  __self: undefined
+}, __jsx("em", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 20
+  },
+  __self: undefined
+}, "Wash your hands, especially after touching any frequently used item or surface.")), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 21
+  },
+  __self: undefined
+}, __jsx("em", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 21
+  },
+  __self: undefined
+}, "Avoid touching your face.")), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 22
+  },
+  __self: undefined
+}, __jsx("em", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 22
+  },
+  __self: undefined
+}, "Sneeze or cough into a tissue, or the insied of your elbow.")), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 23
+  },
+  __self: undefined
+}, __jsx("em", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 23
+  },
+  __self: undefined
+}, "Disinfect frequently used items and surfaces as much as possible.")))), __jsx("h3", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 26
+  },
+  __self: undefined
+}, "Links and Resources"), __jsx("ul", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 27
+  },
+  __self: undefined
+}, __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 28
+  },
+  __self: undefined
+}, __jsx("a", {
+  href: "https://www.coronavirus.gov/",
+  target: "_blank",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 28
+  },
+  __self: undefined
+}, "coronavirus.gov")), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 29
+  },
+  __self: undefined
+}, __jsx("a", {
   href: "https://www.cdc.gov/coronavirus/2019-ncov/",
   target: "_blank",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7
+    lineNumber: 29
   },
   __self: undefined
-}, "CDC Coronavirus Website"), " for latest information on the disease and how to protect yourself from it."));
+}, "CDC Coronavirus Website")), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 30
+  },
+  __self: undefined
+}, __jsx("a", {
+  href: "https://www.apple.com/covid19",
+  target: "_blank",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 30
+  },
+  __self: undefined
+}, "Apple + CDC COVID Screening Tool"))));
 
 /* harmony default export */ __webpack_exports__["default"] = (Instructions);
 
