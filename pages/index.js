@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import Stats from '../components/Stats';
+import Stats from '../components/Stats/Stats';
 // import CountrySelector from '../components/CountrySelector';
 import Layout from '../components/Layout/Layout';
 import Instructions from '../components/Instructions/Instructions';
@@ -19,7 +19,7 @@ export default function IndexPage() {
     <div>
       <GlobalStyle />
       <Layout>
-        <h2>Global Statistics:</h2>
+        {/* <h2>Global Statistics:</h2> */}
         <Stats url="https://covid19.mathdro.id/api"></Stats>
         {/* <h2>United States Statistics:</h2> */}
         <Stats url="https://covid19.mathdro.id/api/countries/usa"></Stats>

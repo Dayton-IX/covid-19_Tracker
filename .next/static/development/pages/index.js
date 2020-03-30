@@ -533,43 +533,30 @@ if (true) {
 
 /***/ }),
 
-/***/ "./components/Stats.js":
-/*!*****************************!*\
-  !*** ./components/Stats.js ***!
-  \*****************************/
+/***/ "./components/Stats/Stats.js":
+/*!***********************************!*\
+  !*** ./components/Stats/Stats.js ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Stats; });
-/* harmony import */ var _babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/taggedTemplateLiteral */ "./node_modules/@babel/runtime/helpers/esm/taggedTemplateLiteral.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _utils_useStats__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/useStats */ "./utils/useStats.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_useStats__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/useStats */ "./utils/useStats.js");
+/* harmony import */ var _Stats_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Stats.module.css */ "./components/Stats/Stats.module.css");
+/* harmony import */ var _Stats_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Stats_module_css__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\dayto\\Documents\\Code\\covid-19_Tracker\\components\\Stats\\Stats.js";
 
-var _jsxFileName = "C:\\Users\\dayto\\Documents\\Code\\covid-19_Tracker\\components\\Stats.js";
-
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  box-sizing: border-box;\n  padding: 10px;\n  border-radius: 50px;\n  background: #3498db;\n  box-shadow: inset 32px 32px 65px #2c81ba, \n              inset -32px -32px 65px #3caffc;\n  font-size: 1.5rem;\n  align-items: center;\n  justify-items: center;\n  text-align: center;\n  width: 45%;\n  display: inline-block;\n  margin-right: 20px;\n"]);
-
-  _templateObject = function _templateObject() {
-    return data;
-  };
-
-  return data;
-}
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-
-var StatBlock = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
 function Stats(_ref) {
   var url = _ref.url;
 
-  var _useStats = Object(_utils_useStats__WEBPACK_IMPORTED_MODULE_3__["default"])(url),
+  var _useStats = Object(_utils_useStats__WEBPACK_IMPORTED_MODULE_1__["default"])(url),
       stats = _useStats.stats,
       loading = _useStats.loading,
       error = _useStats.error;
@@ -578,60 +565,122 @@ function Stats(_ref) {
   if (loading) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 7
     },
     __self: this
   }, "Loading...");
   if (error) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 8
     },
     __self: this
   }, "Error...");
-  return __jsx(StatBlock, {
+  return __jsx("div", {
+    className: _Stats_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.Stats,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 10
     },
     __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 11
     },
     __self: this
   }, "Confirmed:"), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 12
     },
     __self: this
   }, stats.confirmed.value), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 13
     },
     __self: this
   }, "Deaths:"), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 14
     },
     __self: this
   }, stats.deaths.value), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 15
     },
     __self: this
   }, "Recovered:"), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 16
     },
     __self: this
   }, stats.recovered.value));
+}
+
+/***/ }),
+
+/***/ "./components/Stats/Stats.module.css":
+/*!*******************************************!*\
+  !*** ./components/Stats/Stats.module.css ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/postcss-loader/src??__nextjs_postcss!./Stats.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./components/Stats/Stats.module.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/postcss-loader/src??__nextjs_postcss!./Stats.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./components/Stats/Stats.module.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../node_modules/postcss-loader/src??__nextjs_postcss!./Stats.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./components/Stats/Stats.module.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
 }
 
 /***/ }),
@@ -1631,6 +1680,23 @@ exports.push([module.i, ".Layout_Layout__w4A5g {\r\n    display: inline-block;\r
 // Exports
 exports.locals = {
 	"Layout": "Layout_Layout__w4A5g"
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./components/Stats/Stats.module.css":
+/*!*******************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/postcss-loader/src??__nextjs_postcss!./components/Stats/Stats.module.css ***!
+  \*******************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".Stats_Stats__2LX5N {\r\n    box-sizing: border-box;\r\n    border-radius: 50px;\r\n    padding: 20px;\r\n    background: #3498db;\r\n    box-shadow: inset 32px 32px 65px #2c81ba, \r\n                inset -32px -32px 65px #3caffc;\r\n    font-size: 1.5rem;\r\n    align-items: center;\r\n    justify-items: center;\r\n    text-align: center;\r\n    width: 45%;\r\n    display: inline-block;\r\n    margin-right: 20px;\r\n}", "",{"version":3,"sources":["Stats.module.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;IACtB,mBAAmB;IACnB,aAAa;IACb,mBAAmB;IACnB;8CAC0C;IAC1C,iBAAiB;IACjB,mBAAmB;IACnB,qBAAqB;IACrB,kBAAkB;IAClB,UAAU;IACV,qBAAqB;IACrB,kBAAkB;AACtB","file":"Stats.module.css","sourcesContent":[".Stats {\r\n    box-sizing: border-box;\r\n    border-radius: 50px;\r\n    padding: 20px;\r\n    background: #3498db;\r\n    box-shadow: inset 32px 32px 65px #2c81ba, \r\n                inset -32px -32px 65px #3caffc;\r\n    font-size: 1.5rem;\r\n    align-items: center;\r\n    justify-items: center;\r\n    text-align: center;\r\n    width: 45%;\r\n    display: inline-block;\r\n    margin-right: 20px;\r\n}"]}]);
+// Exports
+exports.locals = {
+	"Stats": "Stats_Stats__2LX5N"
 };
 
 /***/ }),
@@ -5400,7 +5466,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var _components_Stats__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Stats */ "./components/Stats.js");
+/* harmony import */ var _components_Stats_Stats__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Stats/Stats */ "./components/Stats/Stats.js");
 /* harmony import */ var _components_Layout_Layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Layout/Layout */ "./components/Layout/Layout.js");
 /* harmony import */ var _components_Instructions_Instructions__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Instructions/Instructions */ "./components/Instructions/Instructions.js");
 
@@ -5443,20 +5509,14 @@ function IndexPage() {
       lineNumber: 21
     },
     __self: this
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, "Global Statistics:"), __jsx(_components_Stats__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, __jsx(_components_Stats_Stats__WEBPACK_IMPORTED_MODULE_3__["default"], {
     url: "https://covid19.mathdro.id/api",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: this
-  }), __jsx(_components_Stats__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), __jsx(_components_Stats_Stats__WEBPACK_IMPORTED_MODULE_3__["default"], {
     url: "https://covid19.mathdro.id/api/countries/usa",
     __source: {
       fileName: _jsxFileName,

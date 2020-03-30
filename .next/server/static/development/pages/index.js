@@ -506,10 +506,10 @@ module.exports = {
 
 /***/ }),
 
-/***/ "./components/Stats.js":
-/*!*****************************!*\
-  !*** ./components/Stats.js ***!
-  \*****************************/
+/***/ "./components/Stats/Stats.js":
+/*!***********************************!*\
+  !*** ./components/Stats/Stats.js ***!
+  \***********************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -518,29 +518,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Stats; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _utils_useStats__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/useStats */ "./utils/useStats.js");
-var _jsxFileName = "C:\\Users\\dayto\\Documents\\Code\\covid-19_Tracker\\components\\Stats.js";
+/* harmony import */ var _utils_useStats__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/useStats */ "./utils/useStats.js");
+/* harmony import */ var _Stats_module_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Stats.module.css */ "./components/Stats/Stats.module.css");
+/* harmony import */ var _Stats_module_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Stats_module_css__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\dayto\\Documents\\Code\\covid-19_Tracker\\components\\Stats\\Stats.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
-const StatBlock = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div`
-  box-sizing: border-box;
-  padding: 10px;
-  border-radius: 50px;
-  background: #3498db;
-  box-shadow: inset 32px 32px 65px #2c81ba, 
-              inset -32px -32px 65px #3caffc;
-  font-size: 1.5rem;
-  align-items: center;
-  justify-items: center;
-  text-align: center;
-  width: 45%;
-  display: inline-block;
-  margin-right: 20px;
-`;
 function Stats({
   url
 }) {
@@ -548,66 +533,81 @@ function Stats({
     stats,
     loading,
     error
-  } = Object(_utils_useStats__WEBPACK_IMPORTED_MODULE_2__["default"])(url);
+  } = Object(_utils_useStats__WEBPACK_IMPORTED_MODULE_1__["default"])(url);
   console.log(stats, loading, error);
   if (loading) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 7
     },
     __self: this
   }, "Loading...");
   if (error) return __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 8
     },
     __self: this
   }, "Error...");
-  return __jsx(StatBlock, {
+  return __jsx("div", {
+    className: _Stats_module_css__WEBPACK_IMPORTED_MODULE_2___default.a.Stats,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 10
     },
     __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 11
     },
     __self: this
   }, "Confirmed:"), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 12
     },
     __self: this
   }, stats.confirmed.value), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 13
     },
     __self: this
   }, "Deaths:"), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 14
     },
     __self: this
   }, stats.deaths.value), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 15
     },
     __self: this
   }, "Recovered:"), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 16
     },
     __self: this
   }, stats.recovered.value));
 }
+
+/***/ }),
+
+/***/ "./components/Stats/Stats.module.css":
+/*!*******************************************!*\
+  !*** ./components/Stats/Stats.module.css ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// Exports
+module.exports = {
+	"Stats": "Stats_Stats__2LX5N"
+};
 
 /***/ }),
 
@@ -625,7 +625,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "styled-components");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Stats__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Stats */ "./components/Stats.js");
+/* harmony import */ var _components_Stats_Stats__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Stats/Stats */ "./components/Stats/Stats.js");
 /* harmony import */ var _components_Layout_Layout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Layout/Layout */ "./components/Layout/Layout.js");
 /* harmony import */ var _components_Instructions_Instructions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Instructions/Instructions */ "./components/Instructions/Instructions.js");
 var _jsxFileName = "C:\\Users\\dayto\\Documents\\Code\\covid-19_Tracker\\pages\\index.js";
@@ -664,20 +664,14 @@ function IndexPage() {
       lineNumber: 21
     },
     __self: this
-  }, __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 22
-    },
-    __self: this
-  }, "Global Statistics:"), __jsx(_components_Stats__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }, __jsx(_components_Stats_Stats__WEBPACK_IMPORTED_MODULE_2__["default"], {
     url: "https://covid19.mathdro.id/api",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
     },
     __self: this
-  }), __jsx(_components_Stats__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  }), __jsx(_components_Stats_Stats__WEBPACK_IMPORTED_MODULE_2__["default"], {
     url: "https://covid19.mathdro.id/api/countries/usa",
     __source: {
       fileName: _jsxFileName,
