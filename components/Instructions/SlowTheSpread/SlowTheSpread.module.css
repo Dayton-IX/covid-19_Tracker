@@ -1,0 +1,13 @@
+.SlowTheSpread {
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 50px;
+    background: #3498db;
+    box-shadow:  32px 32px 65px #2c81ba, 
+                -32px -32px 65px #3caffc;
+}
+
+.SlowTheSpread li {
+    margin: 5px;
+    text-align: left;
+}

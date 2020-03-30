@@ -1,7 +1,9 @@
 import React from 'react';
 
+import classes from './SlowTheSpread.module.css';
+
 const SlowTheSpread = (props) => (
-    <div>
+    <div className={classes.SlowTheSpread}>
         <ul>
             <li>Listen and follow the directions of your <strong>STATE AND LOCAL AUTHORITIES</strong></li>
             <li><strong>IF YOU ARE AN OLDER PERSON,</strong> or have a serious underlying health condition, stay home and away from other people.</li>

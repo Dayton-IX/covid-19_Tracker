@@ -114,213 +114,278 @@ var Instructions = function Instructions(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _SlowTheSpread_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SlowTheSpread.module.css */ "./components/Instructions/SlowTheSpread/SlowTheSpread.module.css");
+/* harmony import */ var _SlowTheSpread_module_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_SlowTheSpread_module_css__WEBPACK_IMPORTED_MODULE_1__);
 var _jsxFileName = "C:\\Users\\dayto\\Documents\\Code\\covid-19_Tracker\\components\\Instructions\\SlowTheSpread\\SlowTheSpread.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
+
 var SlowTheSpread = function SlowTheSpread(props) {
   return __jsx("div", {
+    className: _SlowTheSpread_module_css__WEBPACK_IMPORTED_MODULE_1___default.a.SlowTheSpread,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 6
     },
     __self: this
   }, __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 7
     },
     __self: this
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 8
     },
     __self: this
   }, "Listen and follow the directions of your ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 8
     },
     __self: this
   }, "STATE AND LOCAL AUTHORITIES")), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 9
     },
     __self: this
   }, __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 7
+      lineNumber: 9
     },
     __self: this
   }, "IF YOU ARE AN OLDER PERSON,"), " or have a serious underlying health condition, stay home and away from other people."), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 10
     },
     __self: this
   }, "Work or study ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 10
     },
     __self: this
   }, "FROM HOME"), " whenever possible."), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 11
     },
     __self: this
   }, __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 11
     },
     __self: this
   }, "AVOID SOCIAL GATHERINGS"), " in groups of more than 10 people."), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 12
     },
     __self: this
   }, "Avoid eating or drinking at bars and restaurants -- ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 12
     },
     __self: this
   }, "USE PICKUP OR DELIVERY OPTIONS.")), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 13
     },
     __self: this
   }, __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 13
     },
     __self: this
   }, "AVOID DISCRETIONARY TRAVEL,"), " shopping trips, and social visits."), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 14
     },
     __self: this
   }, __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 14
     },
     __self: this
   }, "DO NOT VISIT "), " nursing homes or retirement or long-term care facilties unless to provide critical assistance"), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     },
     __self: this
   }, __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     },
     __self: this
   }, "IF YOU FEEL SICK,"), " stay home. Do not go to work."), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 16
     },
     __self: this
   }, __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 16
     },
     __self: this
   }, "IF YOUR CHILDREN ARE SICK,"), " help them at home. Contact your medical provider."), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: this
   }, "If someone in your household has ", __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: this
   }, "TESTED POSITIVE,"), " keep the entire household at home."), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 18
     },
     __self: this
   }, __jsx("strong", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 18
     },
     __self: this
   }, "ALWAYS PRACTICE GOOD HYGIENE:")), __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: this
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     },
     __self: this
   }, __jsx("em", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     },
     __self: this
   }, "Wash your hands, especially after touching any frequently used item or surface.")), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 21
     },
     __self: this
   }, __jsx("em", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 21
     },
     __self: this
   }, "Avoid touching your face.")), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 22
     },
     __self: this
   }, __jsx("em", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 22
     },
     __self: this
   }, "Sneeze or cough into a tissue, or the insied of your elbow.")), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }, __jsx("em", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }, "Disinfect frequently used items and surfaces as much as possible.")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SlowTheSpread);
+
+/***/ }),
+
+/***/ "./components/Instructions/SlowTheSpread/SlowTheSpread.module.css":
+/*!************************************************************************!*\
+  !*** ./components/Instructions/SlowTheSpread/SlowTheSpread.module.css ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!./SlowTheSpread.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./components/Instructions/SlowTheSpread/SlowTheSpread.module.css");
+
+if (typeof content === 'string') {
+  content = [[module.i, content, '']];
+}
+
+var options = {}
+
+options.insert = function(element){// These elements should always exist. If they do not,
+// this code should fail.
+var anchorElement=document.querySelector('#__next_css__DO_NOT_USE__');var parentNode=anchorElement.parentNode;// Normally <head>
+// Each style tag should be placed right before our
+// anchor. By inserting before and not after, we do not
+// need to track the last inserted element.
+parentNode.insertBefore(element,anchorElement)// Remember: this is development only code.
+//
+// After styles are injected, we need to remove the
+// <style> tags that set `body { display: none; }`.
+//
+// We use `requestAnimationFrame` as a way to defer
+// this operation since there may be multiple style
+// tags.
+;(self.requestAnimationFrame||setTimeout)(function(){for(var x=document.querySelectorAll('[data-next-hide-fouc]'),i=x.length;i--;){x[i].parentNode.removeChild(x[i]);}});};
+options.singleton = false;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js")(content, options);
+
+if (content.locals) {
+  module.exports = content.locals;
+}
+
+if (true) {
+  if (!content.locals) {
+    module.hot.accept(
+      /*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!./SlowTheSpread.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./components/Instructions/SlowTheSpread/SlowTheSpread.module.css",
+      function () {
+        var newContent = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!../../../node_modules/postcss-loader/src??__nextjs_postcss!./SlowTheSpread.module.css */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./components/Instructions/SlowTheSpread/SlowTheSpread.module.css");
+
+        if (typeof newContent === 'string') {
+          newContent = [[module.i, newContent, '']];
+        }
+        
+        update(newContent);
+      }
+    )
+  }
+
+  module.hot.dispose(function() { 
+    update();
+  });
+}
 
 /***/ }),
 
@@ -488,18 +553,8 @@ var _jsxFileName = "C:\\Users\\dayto\\Documents\\Code\\covid-19_Tracker\\compone
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
-function _templateObject2() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  background: #5d6d7e;\n  font-size: 2rem;\n  padding: 2rem;\n  border-radius: 2rem;\n  display: grid;\n  align-items: center;\n  justify-items: center;\n  text-align: center;\n"]);
-
-  _templateObject2 = function _templateObject2() {
-    return data;
-  };
-
-  return data;
-}
-
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-gap: 1rem;\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  box-sizing: border-box;\n  padding: 10px;\n  border-radius: 50px;\n  background: #3498db;\n  box-shadow: inset 32px 32px 65px #2c81ba, \n              inset -32px -32px 65px #3caffc;\n  font-size: 1.5rem;\n  align-items: center;\n  justify-items: center;\n  text-align: center;\n  width: 45%;\n  display: inline-block;\n  margin-right: 20px;\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -510,8 +565,7 @@ function _templateObject() {
 
 
 
-var StatGrid = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
-var StatBlock = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject2());
+var StatBlock = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div(_templateObject());
 function Stats(_ref) {
   var url = _ref.url;
 
@@ -535,67 +589,49 @@ function Stats(_ref) {
     },
     __self: this
   }, "Error...");
-  return __jsx(StatGrid, {
+  return __jsx(StatBlock, {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     },
     __self: this
-  }, __jsx(StatBlock, {
+  }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
     },
     __self: this
-  }, __jsx("h3", {
+  }, "Confirmed:"), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: this
-  }, "Confirmed:"), __jsx("span", {
+  }, stats.confirmed.value), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: this
-  }, stats.confirmed.value)), __jsx(StatBlock, {
+  }, "Deaths:"), __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, stats.deaths.value), __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
     },
     __self: this
-  }, __jsx("h3", {
+  }, "Recovered:"), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 32
     },
     __self: this
-  }, "Deaths:"), __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 33
-    },
-    __self: this
-  }, stats.deaths.value)), __jsx(StatBlock, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }, __jsx("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }, "Recovered:"), __jsx("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }, stats.recovered.value)));
+  }, stats.recovered.value));
 }
 
 /***/ }),
@@ -1562,6 +1598,23 @@ var unitlessKeys = {
 
 /* harmony default export */ __webpack_exports__["default"] = (unitlessKeys);
 
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./components/Instructions/SlowTheSpread/SlowTheSpread.module.css":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??ref--5-oneOf-2-1!./node_modules/postcss-loader/src??__nextjs_postcss!./components/Instructions/SlowTheSpread/SlowTheSpread.module.css ***!
+  \************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
+// Module
+exports.push([module.i, ".SlowTheSpread_SlowTheSpread__3bXaa {\r\n    box-sizing: border-box;\r\n    padding: 10px;\r\n    border-radius: 50px;\r\n    background: #3498db;\r\n    box-shadow:  32px 32px 65px #2c81ba, \r\n                -32px -32px 65px #3caffc;\r\n}\r\n\r\n.SlowTheSpread_SlowTheSpread__3bXaa li {\r\n    margin: 5px;\r\n    text-align: left;\r\n}", "",{"version":3,"sources":["SlowTheSpread.module.css"],"names":[],"mappings":"AAAA;IACI,sBAAsB;IACtB,aAAa;IACb,mBAAmB;IACnB,mBAAmB;IACnB;wCACoC;AACxC;;AAEA;IACI,WAAW;IACX,gBAAgB;AACpB","file":"SlowTheSpread.module.css","sourcesContent":[".SlowTheSpread {\r\n    box-sizing: border-box;\r\n    padding: 10px;\r\n    border-radius: 50px;\r\n    background: #3498db;\r\n    box-shadow:  32px 32px 65px #2c81ba, \r\n                -32px -32px 65px #3caffc;\r\n}\r\n\r\n.SlowTheSpread li {\r\n    margin: 5px;\r\n    text-align: left;\r\n}"]}]);
+// Exports
+exports.locals = {
+	"SlowTheSpread": "SlowTheSpread_SlowTheSpread__3bXaa"
+};
 
 /***/ }),
 
@@ -5356,7 +5409,7 @@ var _jsxFileName = "C:\\Users\\dayto\\Documents\\Code\\covid-19_Tracker\\pages\\
 var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 function _templateObject() {
-  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  html {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n    background-color: #ccd1d1;\n    color: #212f3c;\n    scrollbar-width: thin;\n    text-align: center;\n  }\n"]);
+  var data = Object(_babel_runtime_helpers_esm_taggedTemplateLiteral__WEBPACK_IMPORTED_MODULE_0__["default"])(["\n  html {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\n    background-color: #3498db;\n    color: #212f3c;\n    scrollbar-width: thin;\n    text-align: center;\n  }\n"]);
 
   _templateObject = function _templateObject() {
     return data;
@@ -5403,13 +5456,7 @@ function IndexPage() {
       lineNumber: 23
     },
     __self: this
-  }), __jsx("h2", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 24
-    },
-    __self: this
-  }, "United States Statistics:"), __jsx(_components_Stats__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }), __jsx(_components_Stats__WEBPACK_IMPORTED_MODULE_3__["default"], {
     url: "https://covid19.mathdro.id/api/countries/usa",
     __source: {
       fileName: _jsxFileName,
