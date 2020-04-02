@@ -19,7 +19,7 @@ const SlowTheSpread = (props) => (
             <ul>
                 <li><em>Wash your hands, especially after touching any frequently used item or surface.</em></li>
                 <li><em>Avoid touching your face.</em></li>
-                <li><em>Sneeze or cough into a tissue, or the insied of your elbow.</em></li>
+                <li><em>Sneeze or cough into a tissue, or the inside of your elbow.</em></li>
                 <li><em>Disinfect frequently used items and surfaces as much as possible.</em></li>
             </ul>
         </ul>

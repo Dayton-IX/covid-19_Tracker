@@ -399,7 +399,7 @@ const SlowTheSpread = props => __jsx("div", {
     lineNumber: 22
   },
   __self: undefined
-}, "Sneeze or cough into a tissue, or the insied of your elbow.")), __jsx("li", {
+}, "Sneeze or cough into a tissue, or the inside of your elbow.")), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 23
@@ -470,16 +470,10 @@ class Layout extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
         lineNumber: 10
       },
       __self: this
-    }, "Coronavirus"), __jsx("hr", {
+    }, "Coronavirus"), __jsx("main", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 11
-      },
-      __self: this
-    }), __jsx("main", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
       },
       __self: this
     }, this.props.children));
