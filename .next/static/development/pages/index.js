@@ -96,7 +96,21 @@ var Instructions = function Instructions(props) {
       lineNumber: 14
     },
     __self: this
-  }, "Apple + CDC COVID Screening Tool"))));
+  }, "Apple + CDC COVID Screening Tool")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "https://www.testutah.com/",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, "Test Utah, register for testing for Utah Citizens."))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Instructions);

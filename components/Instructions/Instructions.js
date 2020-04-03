@@ -12,6 +12,7 @@ const Instructions = (props) => (
             <li><a href="https://www.coronavirus.gov/" target="_blank">coronavirus.gov</a></li>
             <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/" target="_blank">CDC Coronavirus Website</a></li>
             <li><a href="https://www.apple.com/covid19" target="_blank">Apple + CDC COVID Screening Tool</a></li>
+            <li><a href="https://www.testutah.com/" target="_blank">Test Utah, register for testing for Utah Citizens.</a></li>
         </ul>
     </div>
 );
