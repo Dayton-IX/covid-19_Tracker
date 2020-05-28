@@ -281,148 +281,136 @@ const SlowTheSpread = props => __jsx("div", {
     lineNumber: 11
   },
   __self: undefined
-}, __jsx("strong", {
+}, "Avoid eating or drinking at bars and restaurants -- ", __jsx("strong", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 11
   },
   __self: undefined
-}, "AVOID SOCIAL GATHERINGS"), " in groups of more than 10 people."), __jsx("li", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
-}, "Avoid eating or drinking at bars and restaurants -- ", __jsx("strong", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 12
-  },
-  __self: undefined
 }, "USE PICKUP OR DELIVERY OPTIONS.")), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 13
+    lineNumber: 12
   },
   __self: undefined
 }, __jsx("strong", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 13
+    lineNumber: 12
   },
   __self: undefined
 }, "AVOID DISCRETIONARY TRAVEL,"), " shopping trips, and social visits."), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 14
+    lineNumber: 13
   },
   __self: undefined
 }, __jsx("strong", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 14
+    lineNumber: 13
   },
   __self: undefined
 }, "DO NOT VISIT "), " nursing homes or retirement or long-term care facilties unless to provide critical assistance"), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15
+    lineNumber: 14
   },
   __self: undefined
 }, __jsx("strong", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 15
+    lineNumber: 14
   },
   __self: undefined
 }, "IF YOU FEEL SICK,"), " stay home. Do not go to work."), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 16
+    lineNumber: 15
   },
   __self: undefined
 }, __jsx("strong", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 16
+    lineNumber: 15
   },
   __self: undefined
 }, "IF YOUR CHILDREN ARE SICK,"), " help them at home. Contact your medical provider."), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 17
+    lineNumber: 16
   },
   __self: undefined
 }, "If someone in your household has ", __jsx("strong", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 17
+    lineNumber: 16
   },
   __self: undefined
 }, "TESTED POSITIVE,"), " keep the entire household at home."), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 18
+    lineNumber: 17
   },
   __self: undefined
 }, __jsx("strong", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 18
+    lineNumber: 17
   },
   __self: undefined
 }, "ALWAYS PRACTICE GOOD HYGIENE:")), __jsx("ul", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 19
+    lineNumber: 18
   },
   __self: undefined
 }, __jsx("li", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20
+    lineNumber: 19
   },
   __self: undefined
 }, __jsx("em", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20
+    lineNumber: 19
   },
   __self: undefined
 }, "Wash your hands, especially after touching any frequently used item or surface.")), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21
+    lineNumber: 20
   },
   __self: undefined
 }, __jsx("em", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21
+    lineNumber: 20
   },
   __self: undefined
 }, "Avoid touching your face.")), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 22
+    lineNumber: 21
   },
   __self: undefined
 }, __jsx("em", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 22
+    lineNumber: 21
   },
   __self: undefined
 }, "Sneeze or cough into a tissue, or the inside of your elbow.")), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 23
+    lineNumber: 22
   },
   __self: undefined
 }, __jsx("em", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 23
+    lineNumber: 22
   },
   __self: undefined
 }, "Disinfect frequently used items and surfaces as much as possible.")))));
@@ -684,12 +672,6 @@ function IndexPage() {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
-    },
-    __self: this
-  }), __jsx(_components_Instructions_Instructions__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 26
     },
     __self: this
   })));

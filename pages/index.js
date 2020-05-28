@@ -23,7 +23,7 @@ export default function IndexPage() {
         <Stats url="https://covid19.mathdro.id/api"></Stats>
         {/* <h2>United States Statistics:</h2> */}
         <Stats url="https://covid19.mathdro.id/api/countries/usa"></Stats>
-        <Instructions />
+        {/* <Instructions /> */}
       </Layout>
     </div>
   );

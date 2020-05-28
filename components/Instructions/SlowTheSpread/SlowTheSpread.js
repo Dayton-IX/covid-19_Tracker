@@ -8,7 +8,6 @@ const SlowTheSpread = (props) => (
             <li>Listen and follow the directions of your <strong>STATE AND LOCAL AUTHORITIES</strong></li>
             <li><strong>IF YOU ARE AN OLDER PERSON,</strong> or have a serious underlying health condition, stay home and away from other people.</li>
             <li>Work or study <strong>FROM HOME</strong> whenever possible.</li>
-            <li><strong>AVOID SOCIAL GATHERINGS</strong> in groups of more than 10 people.</li>
             <li>Avoid eating or drinking at bars and restaurants -- <strong>USE PICKUP OR DELIVERY OPTIONS.</strong></li>
             <li><strong>AVOID DISCRETIONARY TRAVEL,</strong> shopping trips, and social visits.</li>
             <li><strong>DO NOT VISIT </strong> nursing homes or retirement or long-term care facilties unless to provide critical assistance</li>
